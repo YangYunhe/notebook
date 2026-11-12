@@ -41,3 +41,8 @@ trigger: always_on
 - 文件：`*.md`
 - 作用：项目级规则文件，可提交进 Git 与团队共享。
 - 书写方式：与第 1 节相同，每个规则为独立的 `.md` 文件，以 YAML frontmatter 声明 `trigger`，正文使用 Markdown。
+
+## 5. 全局记忆目录
+
+- 目录：`~\.qoder-cn\memory`
+- 作用：Qoder 的全局记忆目录，对所有项目生效。
