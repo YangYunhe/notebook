@@ -20,4 +20,13 @@ git merge brancd_b
 
 # main 分支推送到远程仓库
 git push origin main
+
+# 删除一个分支（必须先切到别的分支，不能删除所在的分支）
+git branch -d brancd_a
+
+# 远程仓库同步删除
+git push origin --delete brancd_a
+
+# 清理本地已经不存在的远程分支记录
+git fetch --prune
 ```
