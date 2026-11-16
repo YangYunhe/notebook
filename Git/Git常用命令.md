@@ -38,6 +38,7 @@ git push origin --delete brancd_a
 git fetch --prune
 
 ########## 4、打附注标签（annotated tag） ##########
+
 # 先保证代码提交完毕
 $ git status
 On branch main
@@ -46,5 +47,8 @@ Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean
 
 # 打附注标签（不加 -a 是打轻量标签 lightweight tag）
-$ git tag -a milestone/M1 -m "里程碑M1：用户模块开发完成，阶段快照"
+$ git tag -a snapshot/v0.0.1 -m "superset-6.1.0-offline: MySQL/Redis 外部依赖 + AFP OIDC 登录 + 多驱动离线安装 + test/pre/prod 环境配置"
+
+# 提交远程
+git push origin snapshot/v0.0.1
 ```
