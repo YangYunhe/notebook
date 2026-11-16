@@ -51,4 +51,15 @@ $ git tag -a snapshot/v0.0.1 -m "superset-6.1.0-offline: MySQL/Redis 外部依�
 
 # 提交远程
 git push origin snapshot/v0.0.1
+
+########## 4、删除标签 ##########
+# 删除本地
+git tag -d snapshot/v0.0.1
+# 删除远程，两条命令都可以使用
+git push origin :refs/tags/snapshot/v0.0.1
+git push origin --delete snapshot/v0.0.1
+# 查看本地还有没有
+git tag | grep snapshot/v0.0.1
+# 拉取远程信息，确认远程tag消失
+git fetch origin --tags git tag | grep snapshot/v0.0.1
 ```
